@@ -1,0 +1,16 @@
+new_branch_file
+
+some basic shell stuff
+__________________
+
+pwd - gives path
+ls - gives file list in the dir
+__________________
+
+
+some basic git actions 
+_________________________
+
+
+
+__________________________
