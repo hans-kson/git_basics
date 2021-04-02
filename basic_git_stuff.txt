@@ -1,0 +1,141 @@
+some power shell stuff
+__________________
+
+pwd - gives path
+ls - gives file list in the dir
+ls -h shows hidden 
+clear - clears the screen 
+__________________
+
+
+some basic git actions 
+_________________________
+git init 
+
+- inside the dir where I have my project. initialize the directory with git and make it my local repo
+creates a ..\.git  with objects hooks config etc. its the local repo infrastructure..
+__________________________
+git add .
+
+-adds all files in dir to the local repo
+
+git add filename.xxx 
+
+-adds a specific file to the local repo. for example "git add file1.txt"
+___________________________
+git commit -m "Initial commit"       (-m means "message" and the stuff witin the "xxx" is just a description)
+
+-making a commit. creates a version of my added files to the local repo master
+
+git commit -am "a message"
+
+- addign a message to the commit 
+______________________________________
+git remote add origin https://github.com/hans-kson/git_basics.git
+
+-connect the local repo to the remote repo (need to state the url of the remote repo). 
+just copy the url from my github repo.  https://github.com/hans-kson/git_basics.git
+________________________________________
+git push origin master
+
+-push the local master branch repo files to the remote repo master branch. be prepared for authentication. 
+there is now a remote master branch
+______________________________________
+git log
+
+- see the history of changes (commits) I made in the local repo
+_______________________________________
+git show e5314dc981e435ff7a7cbdc117cafd019da82534
+
+- to see the details of the different commits. needs the id of the specific commit. you get this from git log. 
+for example git show e5314dc981e435ff7a7cbdc117cafd019da82534
+
+to exit this view and go barck to the dir.  press q. press h to get help
+__________________________________________
+git log -help
+
+-will show all options that you can do with git log 
+_________________________________________ 
+git log -1
+
+-shows details of only the last commit.   
+_________________________________________
+git log --pretty=short
+
+-gives short description of commits
+___________________________________
+git log --pretty=oneline
+
+-gives one line descriptions of commits
+___________________________________
+git log --decorate --oneline --graph
+
+-shows commits in a linear manner. useful when working with multiple branches. 
+_____________________________________
+git status
+
+-show untracked files. files in dir I have not added to the local repo. 
+also shows files I have not commited
+_______________________________________
+git branch
+
+-shows all branches
+________________________________________
+git branch "name of new branch"
+
+-creates a new branch
+____________________________
+git checkout "name of branch to move to"
+
+-makes you move to the branch you want to work on. use git branch after to see * indicate which branch u are on
+I can also use this to checkout a remote branch to my  local repo. nice. 
+_______________________________
+git diff branch_name1...branch_name2
+
+-compares differences between two branches
+____________________________________
+git merge branch_name
+
+-make sure you are on the branch you want to "add" the new branch to. then merge the branch_name with the branch you are on. 
+____________________________________
+git branch -d branch_name
+
+-deletes a specific branch
+_________________________
+
+
+
+
+
+general flow
+be on right branch
+git add --> git commit --> git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
