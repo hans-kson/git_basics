@@ -1,0 +1,19 @@
+some basic shell stuff
+__________________
+
+pwd - gives path
+ls - gives file list in the dir
+__________________
+
+
+some basic git actions 
+_________________________
+git init 
+- inside the dir where I have my project. initialize the directory with git and make it my local repo
+creates a ..\.git  with objects hooks config etc. its the local repo infrastructure..
+__________________________
+git add .
+-adds all files in the local repo
+
+git add filename.xxx
+-adds a specific file in the local repo
